@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Y Nhi Tran">
+  <meta name="description" content="Personal portfolio website for a Computer Science at UC Irvine">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <title>Y Nhi Tran | Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="tabs">
+            <div class="logo">CS @ UCI</div>
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects" class="py-5 bg-navy">
+            <div class="container-fluid px-md-5">
+                <h2 class="display-5 fw-bold mb-5 text-center">FEATURED PROJECTS</h2>  
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 project-card border-0">
+                            <div class="media-container">
+                                <img src="images/zebrafish-after.jpg" class="img-back" alt="Segmented">
+                                <img src="images/zebrafish-before.jpg" class="img-front" alt="Original">
+                                <div class="hover-tag">View AI result</div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="text-accent">AI Bio Classification</h4>
+                                <p class="text-dim">Deep learning pipeline using PyTorch to classify epithelial cells.</p>
+                                <ul class="feature-list">
+                                    <li>Implemented <strong>Otsu thresholding</strong> and morphology for deterministic segmentation of 800+ cells.</li>
+                                    <li>Compared baseline CNNs with <strong>Transfer Learning (ResNet50, EfficientNet)</strong> to optimize accuracy.</li>
+                                    <li>Analyzed model performance using F1 scores and confusion matrices to mitigate class imbalance.</li></ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">                                
+                                <span class="tech-badge"><i class="fab fa-python"></i> PyTorch</span>
+                                <span class="tech-badge"><i class="fas fa-camera"></i> OpenCV</span>    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 project-card border-0">
+                            <div class="media-container">
+                                <video src="videos/plant-demo.mp4" class="video-back" autoplay loop muted playsinline></video>
+                                <img src="images/plant-static.jpg" class="img-front" alt="Smart Plant">
+                                <div class="hover-tag">Hover to review</div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="text-accent">Smart Plant IoT</h4>
+                                <p class="text-dim">Secure telemetry system transmitting real-time sensor data to Azure.</p>
+                                <ul class="feature-list">
+                                    <li>Securely transmitted telemetry data to <strong>Microsoft Azure IoT Hub</strong> via encrypted Wi-Fi.</li>
+                                    <li>Engineered a <strong>non-blocking system architecture</strong> to ensure 99.9% uptime for sensor data acquisition.</li>
+                                    <li>Built a live monitoring dashboard utilizing <strong>WebSockets</strong> for sub-second latency updates.</li></ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">                            
+                                <span class="tech-badge"><i class="fas fa-microchip"></i> TTGO</span>
+                                <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                                <span class="tech-badge"><i class="fas fa-cloud"></i> Azure</span>
+                                <span class="tech-badge"><i class="fas fa-network-wired"></i> WebSocket</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 project-card border-0">
+                            <div class="media-container">
+                                <video src="videos/robotic-arm.mp4" class="video-back" autoplay loop muted playsinline></video>
+                                <img src="images/robotic-static.jpg" class="img-front" alt="Robotic System">
+                                <div class="hover-tag">Hover to review</div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="text-accent">AX5 Robotic System</h4>
+                                <p class="text-dim">Precision motion control for robotic handwriting via G-code.</p>
+                                <ul class="feature-list">
+                                    <li>Configured <strong>CNC controllers</strong> and optimized <strong>G-code</strong> for precise coordinate mapping.</li>
+                                    <li>Utilized Inkscape and Candle to translate vector graphics into mechanical toolpaths.</li>
+                                    <li>Gained hands-on experience in hardware calibration and motion synchronization.</li></ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">                                
+                                <span class="tech-badge"><i class="fas fa-microchip"></i> Arduino</span>
+                                <span class="tech-badge"><i class="fas fa-code"></i> G-code</span>
+                                <span class="tech-badge"><i class="fas fa-pen-nib"></i> Candle</span>
+                                <span class="tech-badge"><i class="fas fa-pen-nib"></i> Inkscape</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
