@@ -15,12 +15,32 @@
 <body>
 
     <header>
-        <nav class="tabs">
-            <div class="logo">CS @ UCI</div>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="experience.html" class="active">Experience</a>
-            <a href="contact.html">Contact</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navy-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand Montserrat text-accent" href="index.html">CS @ UCI</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     
@@ -28,14 +48,14 @@
     <main>
         <section class="timeline-section py-5 bg-navy">
             <div class="container">
-                <h2 class="text-accent Montserrat text-centermb-5">Command History & Qualifications</h2>
+                <h2 class="text-accent Montserrat text-center mb-5">Command History & Qualifications</h2>
 
                 <div class="timeline">
                     <div class="timeline-item left">
                         <aside class="timeline-date Montserrat">August 2025 - Present</aside>
                         <div class="timeline-dot"></div>
                         <article class="timeline-content">
-                            <h4 class="text-accent">Anteater Operator</h4>
+                            <h3 class="text-accent">Anteater Operator</h3>
                             <p class="text-white small">Operate campus shuttle services in a safety-critical environment, 
                                 ensuring the secure and timely transportation of students, staff, and visitors. 
                                 Demonstrate strong situational awareness, reliability, and strict adherence to operational 
@@ -54,7 +74,7 @@
                         <aside class="timeline-date Montserrat">April 2023 - September 2024</aside>
                         <div class="timeline-dot"></div>
                         <article class="timeline-content">
-                            <h4 class="text-accent">Administrative Officer</h4>
+                            <h3 class="text-accent">Administrative Officer</h3>
                             <p class="text-white small">Monitored and troubleshot ATM machines and internal technical systems, 
                                 identifying maintenance and operational issues. Prepared official documentation and 
                                 operational reports while managing administrative workflows. Provided technical and 
@@ -72,7 +92,7 @@
                         <aside class="timeline-date Montserrat">2024 - 2026</aside>
                         <div class="timeline-dot"></div>
                         <article class="timeline-content">
-                            <h4 class="text-accent">Technical certifications</h4>
+                            <h3 class="text-accent">Technical certifications</h3>
                             <p class="text-white small">Earned multiple technical certifications focused on programming, data analysis, 
                                 and software development. These credentials strengthened my foundation in scripting, version control, 
                                 and reproducible scientific computing.
@@ -93,13 +113,13 @@
                         <aside class="timeline-date Montserrat">2023 - 2025</aside>
                         <div class="timeline-dot"></div>
                         <article class="timeline-content">
-                            <h4 class="text-accent">Leadership & Activities</h4>
+                            <h3 class="text-accent">Leadership & Activities</h3>
                             <p class="text-white small">IgniteCS Programming Expo (Virtual) - September 2025</p>
                             <div class="hidden-details">
                                 <p class="text-dim Roboto">
                                     Served as a host and judge for a virtual programming expo, evaluating 10 student projects 
                                     based on technical complexity, creativity, and real-world impact. Facilitated 
-                                    discussions and provided constructive feedback to participants.</p>
+                                    discussions and provided constructive feedback to participants.
                                 </p>
                             </div>
                             
@@ -124,5 +144,47 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <footer class="py-4 mt-5 bg-navy border-top border-accent">
+            <div class="container">
+                <div class="text-dim Roboto">
+                    <a href="http://validator.w3.org/check?uri=referer">
+                    W3C validator
+                    </a>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center text-md-start">
+                        <p class="text-white Montserrat mb-0" style="font-size: 0.9rem;">
+                            © 2026 Y Nhi Tran
+                        </p>
+                        <small class="text-accent Roboto">Computer Science | UCI</small>
+                    </div>
+
+                    <div class="col-md-4 text-center my-3 my-md-0">
+                        <a href="https://linkedin.com/in/nhitrany/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/ynhi27" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:tranyn1@uci.edu" target="_blank" class="social-icon" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 text-center text-md-end">
+                        <nav aria-label="Footer Navigation">
+                            <a href="projects.html" class="footer-link">Projects</a>
+                            <a href="experience.html" class="footer-link">Experience</a>
+                            <a href="contact.html" class="footer-link">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
