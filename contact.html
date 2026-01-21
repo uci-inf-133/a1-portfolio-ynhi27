@@ -44,81 +44,100 @@
         </nav>
     </header>
     <main>
-        <section class="contact-section py-5 bg-navy">
+        <section class="py-5">
             <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="text-accent Montserrat">Get In Touch</h2>
-                    <p class="text-dim Roboto">Open for technical collaborations and leadership opportunities.</p>
+                <div class="row g-4 border border-accent rounded-4 overflow-hidden bg-navy-light shadow-lg">
+                    
+                    <div class="col-lg-6 p-5">
+                        <h3 class="text-accent Montserrat mb-4">Contact</h3>
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-white">Full Name</label>
+                                <input type="text" class="form-control bg-navy border-accent text-white" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-white">Email Address</label>
+                                <input type="email" class="form-control bg-navy border-accent text-white" id="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label text-white">Subject</label>
+                                <select class="form-select bg-navy border-accent text-white" id="subject">
+                                    <option selected>General Inquiry</option>
+                                    <option value="1">Internship Opportunity</option>
+                                    <option value="2">Project Collaboration</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label text-white">Message</label>
+                                <textarea class="form-control bg-navy border-accent text-white" id="message" rows="4" placeholder="How can I help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent w-100 fw-bold">Send Mesage</button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 p-0">
+                        <div class="h-100">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4384.853477677941!2d-117.84257169171109!3d33.64583529942977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1769007703196!5m2!1sen!2sus" 
+                                style="border:0; width: 100%; height: 100%; min-height: 500px;" 
+                                allowfullscreen="" loading="lazy" title="UC Irvine Campus Map">
+                            </iframe>
+                        </div>
+                    </div>
+                    
                 </div>
+            </div>
+        </section>
 
-                <div class="row justify-content-center g-4">
-                    <div class="col-md-4">
-                        <div class="contact-box text-center p-4 h-100">
-                            <i class="fas fa-envelope-open-text fa-2x text-accent mb-3"></i>
-                            <h3 class="text-white Montserrat">Official Email</h3>
-                            <a href="mailto:tranyn1@uci.edu" class="text-dim Roboto text-decoration-none">tranyn1@uci.edu</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="contact-box text-center p-4 h-100">
-                            <i class="fab fa-linkedin fa-2x text-accent mb-3"></i>
-                            <h3 class="text-white Montserrat">Professional Network</h3>
-                            <a href="http://linkedin.com/in/nhitrany/" class="text-dim Roboto text-decoration-none">linkedin.com/in/nhitrany/</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="contact-box text-center p-4 h-100">
-                            <i class="fas fa-map-marker-alt fa-2x text-accent mb-3"></i>
-                            <h3 class="text-white Montserrat">Current Station</h3>
-                            <p class="text-dim Roboto mb-0">Irvine, California, USA</p>
-                        </div>
-                    </div>
-                </div>
+        <section class="py-5 bg-navy-dark border-bottom border-accent">
+            <div class="container text-center">
+                <h1 class="display-5 Montserrat text-accent fw-bold">GET IN TOUCH</h1>
+                <p class="lead text-white-50 mx-auto" style="max-width: 700px;">
+                    I am currently a Computer Science student at UC Irvine, actively seeking 
+                    <strong>Summer 2026 Internship</strong> opportunities. Whether you have a 
+                    question or just want to connect, my inbox is always open!
+                </p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <footer class="py-4 mt-5 bg-navy border-top border-accent">
-            <div class="container">
-                <div class="text-dim Roboto">
-                    <a href="http://validator.w3.org/check?uri=referer">
-                    W3C validator
+    <footer class="py-4 pt-5 bg-navy border-top border-accent">
+        <div class="container">
+            <div class="text-dim Roboto">
+                <a href="http://validator.w3.org/check?uri=referer">
+                W3C validator
+                </a>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <p class="text-white Montserrat mb-0" style="font-size: 0.9rem;">
+                        © 2026 Y Nhi Tran
+                    </p>
+                    <small class="text-accent Roboto">Computer Science | UCI</small>
+                </div>
+
+                <div class="col-md-4 text-center my-3 my-md-0">
+                    <a href="https://linkedin.com/in/nhitrany/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <em class="fab fa-linkedin-in"></em>
+                    </a>
+                    <a href="https://github.com/ynhi27" target="_blank" class="social-icon" aria-label="GitHub">
+                        <em class="fab fa-github"></em>
+                    </a>
+                    <a href="mailto:tranyn1@uci.edu" target="_blank" class="social-icon" aria-label="Email">
+                        <em class="fas fa-envelope"></em>
                     </a>
                 </div>
 
-                <div class="row align-items-center">
-                    <div class="col-md-4 text-center text-md-start">
-                        <p class="text-white Montserrat mb-0" style="font-size: 0.9rem;">
-                            © 2026 Y Nhi Tran
-                        </p>
-                        <small class="text-accent Roboto">Computer Science | UCI</small>
-                    </div>
-
-                    <div class="col-md-4 text-center my-3 my-md-0">
-                        <a href="https://linkedin.com/in/nhitrany/" target="_blank" class="social-icon" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/ynhi27" target="_blank" class="social-icon" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:tranyn1@uci.edu" target="_blank" class="social-icon" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-
-                    <div class="col-md-4 text-center text-md-end">
-                        <nav aria-label="Footer Navigation">
-                            <a href="projects.html" class="footer-link">Projects</a>
-                            <a href="experience.html" class="footer-link">Experience</a>
-                            <a href="contact.html" class="footer-link">Contact</a>
-                        </nav>
-                    </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <nav aria-label="Footer Navigation">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="projects.html" class="footer-link">Projects</a>
+                        <a href="experience.html" class="footer-link">Experience</a>                        
+                    </nav>
                 </div>
             </div>
-        </footer>
+        </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
